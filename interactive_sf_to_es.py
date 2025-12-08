@@ -13,6 +13,9 @@ from datetime import datetime
 from pathlib import Path
 import logging
 
+# Add current directory to path for config import
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 from elasticsearch import Elasticsearch
 from sf_auth import get_salesforce_connection
 from config import get_elasticsearch_config, validate_es_config
