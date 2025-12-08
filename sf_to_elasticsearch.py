@@ -16,9 +16,13 @@ import sys
 import re
 import json
 import logging
+import os
 from datetime import datetime
 from urllib.parse import urlparse
 from typing import Optional, Dict, Any
+
+# Add current directory to path for config import
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from elasticsearch import Elasticsearch
 from elasticsearch.exceptions import ConnectionError, AuthenticationException, RequestError
