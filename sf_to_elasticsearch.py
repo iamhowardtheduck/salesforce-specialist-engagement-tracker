@@ -221,8 +221,8 @@ def create_index_if_not_exists(es: Elasticsearch, es_config: Dict[str, Any]) -> 
             "mappings": {
                 "properties": {
                     "opportunity_id": {"type": "keyword"},
-                    "opportunity_name": {"type": "text"},
-                    "account_name": {"type": "text"},
+                    "opportunity_name": {"type": "keyword"},
+                    "account_name": {"type": "keyword"},
                     "close_date": {"type": "date"},
                     "amount": {"type": "double"},
                     "tcv_amount": {"type": "double"},
