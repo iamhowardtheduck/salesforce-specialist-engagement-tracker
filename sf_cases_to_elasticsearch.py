@@ -342,7 +342,7 @@ class SalesforceCasesProcessor:
                         "properties": {
                             "case_id": {"type": "keyword"},
                             "case_number": {"type": "keyword"},
-                            "subject": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                            "subject": {"type": "keyword"},
                             "description": {"type": "text"},
                             "status": {"type": "keyword"},
                             "priority": {"type": "keyword"},
@@ -351,14 +351,14 @@ class SalesforceCasesProcessor:
                             "reason": {"type": "keyword"},
                             
                             "account_id": {"type": "keyword"},
-                            "account_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                            "account_name": {"type": "keyword"},
                             
                             "contact_id": {"type": "keyword"},
-                            "contact_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                            "contact_name": {"type": "keyword"},
                             "contact_email": {"type": "keyword"},
                             
                             "supplied_email": {"type": "keyword"},
-                            "supplied_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                            "supplied_name": {"type": "keyword"},
                             "supplied_phone": {"type": "keyword"},
                             
                             "created_date": {"type": "date"},
@@ -372,11 +372,11 @@ class SalesforceCasesProcessor:
                             "is_escalated": {"type": "boolean"},
                             
                             "owner_id": {"type": "keyword"},
-                            "owner_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                            "owner_name": {"type": "keyword"},
                             "owner_email": {"type": "keyword"},
                             
                             "created_by_id": {"type": "keyword"},
-                            "created_by_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                            "created_by_name": {"type": "keyword"},
                             
                             "parent_case_id": {"type": "keyword"},
                             "parent_case_number": {"type": "keyword"},
