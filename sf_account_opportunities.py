@@ -425,9 +425,9 @@ class AccountOpportunitiesProcessor:
                     "mappings": {
                         "properties": {
                             "opportunity_id": {"type": "keyword"},
-                            "opportunity_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                            "opportunity_name": {"type": "keyword"},
                             "account_id": {"type": "keyword"},
-                            "account_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                            "account_name": {"type": "keyword"},
                             "close_date": {"type": "date"},
                             "amount": {"type": "double"},
                             "stage_name": {"type": "keyword"},
@@ -437,7 +437,7 @@ class AccountOpportunitiesProcessor:
                             "probability": {"type": "double"},
                             "created_date": {"type": "date"},
                             "last_modified_date": {"type": "date"},
-                            "owner_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                            "owner_name": {"type": "keyword"},
                             "owner_id": {"type": "keyword"},
                             "description": {"type": "text"},
                             "lead_source": {"type": "keyword"},
